@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!-- 设置日志用log4j -->
+<settings>
+<setting name="logImpl" value="LOG4J"/>
+</settings>
+<!-- 为实体类取别名，简化在XXXmapper.xml类路径的书写 -->
+
+<!-- 告诉mybatis去哪里找映射关系 -->
+<mappers>
+<mapper resource="com/ssm/dao/News.xml"/>
+</mappers>
+</configuration>
